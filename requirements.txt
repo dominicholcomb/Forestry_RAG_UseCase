@@ -3,4 +3,3 @@ anthropic
 openai
 pinecone-client
 python-dotenv
-pinecone

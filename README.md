@@ -36,12 +36,19 @@ This demo uses the following company documents:
 A sample set of test queries and expected responses can be found in this [Google Sheet](https://docs.google.com/spreadsheets/d/1TkVRBcPWqG4YY9x1mxdUZwh_Xyt-qlE0Nqw20x5X68U/edit?usp=sharing).
 
 ## Technical Implementation
+
 The demo uses:
-- LangChain for document processing and RAG implementation
-- PineCone for vector storage and similarity search
-- OpenAI's embedding model for document vectorization
-- OpenAI's language model for response generation
-- Streamlit for the user interface
+- **Vector Database**: Pinecone for document embedding storage and retrieval
+- **Document Processing**: LangChain for document loading and chunking with source metadata preservation
+- **Embedding**: OpenAI's text-embedding-ada-002 model
+- **LLM**: Anthropic's Claude 3.7 Sonnet for generating responses
+- **UI**: Streamlit for the conversational interface
+
+The application implements a complete RAG workflow:
+1. Documents are processed, chunked, and embedded
+2. User queries are converted to embeddings and used for semantic search
+3. Retrieved context is combined with the original query
+4. Claude generates responses with proper source attribution
 
 ## Production Implementation
 For a production environment, this solution would be enhanced with:
@@ -57,13 +64,6 @@ This same functionality could be implemented in a low-code environment using:
 - Azure OpenAI Service
 - Azure Cognitive Search for vector database
 - SharePoint for document storage and management
-
-## Setup and Installation
-1. Clone this repository
-2. Install requirements: `pip install -r requirements.txt`
-3. Add your OpenAI API key to the `.env` file
-4. Run the document indexing: `python ingest.py`
-5. Launch the app: `streamlit run app.py`
 
 ## Future Enhancements
 - Mobile application for field use

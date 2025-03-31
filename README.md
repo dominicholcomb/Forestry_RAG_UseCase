@@ -3,7 +3,8 @@
 ## Quick Start
 1. Open the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)
  
-  **BE SURE TO CLICK "Yes, get this app back up!" IF THE APPLICATION HAS FALLEN ASLEEP**
+   **BE SURE TO CLICK "Yes, get this app back up!" IF THE APPLICATION HAS FALLEN ASLEEP**
+
 2. Try asking these sample questions:
    - "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
    - "What is the preferred height range for Douglas Fir seedlings?"

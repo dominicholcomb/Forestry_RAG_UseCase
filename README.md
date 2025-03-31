@@ -13,7 +13,7 @@
 This demo showcases a Retrieval-Augmented Generation (RAG) system designed for Weyerhaeuser's field operations and forestry management teams. The application allows employees to query forestry-related information using natural language, receiving accurate answers derived from company documentation.
 
 ## Problem Statement
-Field workers (i.e. field operations and forestry management employees) often need access to specific information from company protocols and guidelines while working in remote locations. Traditional document searches can be time-consuming and inefficient, especially when trying to find specific details across multiple documents.
+Field workers (i.e. field operations and forestry management employees) often need access to specific information from company protocols and guidelines while working in remote locations. Traditional document searching can be time-consuming and inefficient, and may lead to field workers wasting time parsing through many documents, or at worst being unable to find critical information, leading to less safe and compliant field work.
 
 ## Solution
 This knowledge assistant uses RAG technology to:

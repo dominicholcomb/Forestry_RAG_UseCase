@@ -104,8 +104,11 @@ with st.sidebar:
         **Note:** The content of this demo is entirely fictional and does **not** represent official Weyerhaeuser policy.
 
         ### Sample Questions:
-        * "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
-        * "What is the preferred height range for Douglas Fir seedlings?"
+        * What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?
+        * What is the preferred height range for Douglas Fir seedlings?
+        * I planted seedlings. Now what?
+        * What percentage of the harvest area must be marked as wildlife retention?
+        * What document will provide more information to me on fire prevention protocol?
         """
     )
 

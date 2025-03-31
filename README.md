@@ -17,7 +17,7 @@ Field workers (i.e. field operations and forestry management employees) often ne
 
 ## Solution
 This knowledge assistant uses RAG technology to:
-1. Index company documents into a vector database (forestryingest.py)
+1. Index company documents into a vector database (forestry_ingest.py)
 2. Retrieve relevant information based on prompt (forestry_app.py)
 3. Generate response using retrieved context (forestry_app.py)
 4. Provide citations to ensure transparency and trust (forestry_app.py)

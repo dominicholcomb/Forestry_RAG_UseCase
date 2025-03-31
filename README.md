@@ -18,16 +18,15 @@ Field workers (i.e. field operations and forestry management employees) often ne
 ## Solution
 This knowledge assistant uses RAG technology to:
 1. Index company documents into a vector database
-2. Retrieve relevant information based on natural language queries
-3. Generate comprehensive, accurate responses using retrieved context
-4. Provide source attribution to ensure transparency and trust
+2. Retrieve relevant information based on prompt
+3. Generate response using retrieved context
+4. Provide citations to ensure transparency and trust
 
 ## Demo Application
 The Streamlit-based demo allows users to:
 - Ask questions in natural language about forestry operations
 - Receive AI-generated responses based on company documentation
 - View which documents and sections were used to create the response
-- Explore example questions through the sidebar
 
 ## Sample Documents
 Find the following sample documents in the Sample_Documents folder of this github repository:

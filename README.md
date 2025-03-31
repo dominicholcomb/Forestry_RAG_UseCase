@@ -54,11 +54,10 @@ The application implements a complete RAG workflow:
 
 ## Production Implementation
 For a production environment, this solution would be enhanced with:
-- Cloud-based vector database (like Pinecone) for scalability
 - Authentication and role-based access control
-- Expanded document corpus covering all relevant company materials
+- Expanded document collection covering more relevant company materials
 - Regular indexing updates as documents are modified
-- Usage analytics to identify common queries and gaps in documentation
+- Usage analytics to identify common questions and response preferences
 
 ## Low-Code/No-Code Implementation
 This same functionality could be implemented in a low-code environment using:
@@ -66,6 +65,8 @@ This same functionality could be implemented in a low-code environment using:
 - Azure OpenAI Service
 - Azure Cognitive Search for vector database
 - SharePoint for document storage and management
+
+This would likely be easier in a low-code environment... I just can't develop in Power Apps on my personal account!
 
 ## Future Enhancements
 - **Expanded Testing**: Develop more comprehensive test examples with edge cases to ensure reliability across diverse forestry queries

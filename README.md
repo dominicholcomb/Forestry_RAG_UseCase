@@ -1,7 +1,7 @@
 # Weyerhaeuser Forestry Knowledge Assistant
 
 ## Quick Start
-1. Launch the application: [here](https://holcombforestryragusecase.streamlit.app/)
+1. Launch the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)
 2. Try asking these sample questions:
    - "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
    - "What percentage of the harvest area must be marked as wildlife retention?"

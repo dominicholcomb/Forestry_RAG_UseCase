@@ -4,7 +4,7 @@
 1. Launch the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)
 2. Try asking these sample questions:
    - "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
-   - "What percentage of the harvest area must be marked as wildlife retention?"
+   - "What is the preferred height range for Douglas Fir seedlings?"
 
 ## Overview
 This demo showcases a Retrieval-Augmented Generation (RAG) system designed for Weyerhaeuser's field operations and forestry management teams. The application allows employees to query forestry-related information using natural language, receiving accurate answers derived from company documentation.
@@ -33,12 +33,12 @@ This demo uses the following company documents:
 - Weyerhaeuser Harvest Planning Checklist
 
 ## Testing
-A sample set of test queries and expected responses can be found in this [Google Sheet](https://docs.google.com/spreadsheets/d/your-sheet-id).
+A sample set of test queries and expected responses can be found in this [Google Sheet](https://docs.google.com/spreadsheets/d/1TkVRBcPWqG4YY9x1mxdUZwh_Xyt-qlE0Nqw20x5X68U/edit?usp=sharing).
 
 ## Technical Implementation
 The demo uses:
 - LangChain for document processing and RAG implementation
-- FAISS for vector storage and similarity search
+- PineCone for vector storage and similarity search
 - OpenAI's embedding model for document vectorization
 - OpenAI's language model for response generation
 - Streamlit for the user interface

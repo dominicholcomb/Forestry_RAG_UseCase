@@ -66,8 +66,9 @@ This same functionality could be implemented in a low-code environment using:
 - SharePoint for document storage and management
 
 ## Future Enhancements
-- Mobile application for field use
-- Offline mode for areas with limited connectivity
-- Voice interface for hands-free operation
-- Integration with GIS data for location-specific information
-- Expansion to other business units and document types
+- **Expanded Testing**: Develop more comprehensive test examples with edge cases to ensure reliability across diverse forestry queries
+- **Model Optimization**: Evaluate different LLM models and parameters to balance performance, cost, and latency for production deployment
+- **Security Implementation**: Add authentication, role-based access control, and data encryption to meet enterprise security requirements
+- **Responsible AI Framework**: Implement AI ethics guidelines, user feedback mechanisms, and clear disclaimers about potential limitations
+- **Performance Monitoring**: Add analytics to track usage patterns, response quality, and identify opportunities for system improvement
+- **Mobile Adaptations**: Optimize the interface for field use on mobile devices with limited connectivity

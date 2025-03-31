@@ -1,7 +1,8 @@
 # Weyerhaeuser Forestry Knowledge Assistant Demo
 
 ## Quick Start
-1. Launch the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)
+1. Open the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)
+  **BE SURE TO CLICK "Yes, get this app back up!" IF THE APPLICATION HAS FALLEN ASLEEP**
 2. Try asking these sample questions:
    - "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
    - "What is the preferred height range for Douglas Fir seedlings?"
@@ -27,7 +28,7 @@ The Streamlit-based demo allows users to:
 - Explore example questions through the sidebar
 
 ## Sample Documents
-This demo uses the following company documents:
+Find the following sample documents in the Sample_Documents folder of this github repository:
 - Douglas Fir Planting Guidelines (Pacific Northwest Region)
 - Weyerhaeuser Fire Prevention and Response Plan
 - Weyerhaeuser Harvest Planning Checklist

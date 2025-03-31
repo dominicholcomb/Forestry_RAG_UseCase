@@ -29,7 +29,7 @@ The Streamlit-based demo allows users to:
 - View which documents and sections were used to create the response
 
 ## Sample Documents
-Find the following sample documents in the Sample_Documents folder of this github repository:
+Find the following artificial sample documents in the Sample_Documents folder of this github repository (these are not real and just for test purposes):
 - DOUGLAS FIR PLANTING GUIDELINES (PACIFIC NORTHWEST REGION).docx
 - WEYERHAEUSER FIRE PREVENTION AND RESPONSE PLAN.docx
 - WEYERHAEUSER HARVEST PLANNING CHECKLIST APPLICABLE TO ALL COMPANY-OWNED TIMBERLANDS.docx

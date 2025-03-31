@@ -31,9 +31,9 @@ The Streamlit-based demo allows users to:
 
 ## Sample Documents
 Find the following sample documents in the Sample_Documents folder of this github repository:
-- Douglas Fir Planting Guidelines (Pacific Northwest Region)
-- Weyerhaeuser Fire Prevention and Response Plan
-- Weyerhaeuser Harvest Planning Checklist
+- DOUGLAS FIR PLANTING GUIDELINES (PACIFIC NORTHWEST REGION).docx
+- WEYERHAEUSER FIRE PREVENTION AND RESPONSE PLAN.docx
+- WEYERHAEUSER HARVEST PLANNING CHECKLIST APPLICABLE TO ALL COMPANY-OWNED TIMBERLANDS.docx
 
 ## Testing
 A sample set of test queries and expected responses can be found in this [Google Sheet](https://docs.google.com/spreadsheets/d/1TkVRBcPWqG4YY9x1mxdUZwh_Xyt-qlE0Nqw20x5X68U/edit?usp=sharing).

@@ -34,7 +34,7 @@ Find the following artificial sample documents in the Sample_Documents folder of
 - WEYERHAEUSER FIRE PREVENTION AND RESPONSE PLAN.docx
 - WEYERHAEUSER HARVEST PLANNING CHECKLIST APPLICABLE TO ALL COMPANY-OWNED TIMBERLANDS.docx
 
-## Testing
+## Testing & Evaluation
 A sample set of test queries and expected responses can be found in this [Google Sheet](https://docs.google.com/spreadsheets/d/1TkVRBcPWqG4YY9x1mxdUZwh_Xyt-qlE0Nqw20x5X68U/edit?usp=sharing).
 
 ## Technical Implementation
@@ -71,7 +71,7 @@ This would likely be easier in a low-code environment... I just can't develop in
 ## Future Enhancements
 - **Expanded Testing**: Develop more comprehensive test examples with edge cases to ensure reliability across diverse forestry queries
 - **Model Optimization**: Evaluate different LLM models and parameters to balance performance, cost, and latency for production deployment
-- **Security Implementation**:Consider adding authentication, role-based access control, and other safety measures to meet enterprise security requirements
+- **Security Implementation**: Consider adding authentication, role-based access control, and other safety measures to meet enterprise security requirements
 - **Responsible AI Framework**: Implement AI ethics guidelines, user feedback mechanisms, and clear disclaimers about potential limitations
-- **Performance Monitoring**: Add analytics to track usage patterns, response quality, and identify opportunities for system improvement
+- **Performance Monitoring**: Add analytics/features to track usage, response preferences (thumbs up/thumbs down button), and identify opportunities for system improvement
 - **Mobile Adaptations**: Optimize the interface for field use on mobile devices with limited connectivity

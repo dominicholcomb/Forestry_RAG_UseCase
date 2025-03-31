@@ -1,4 +1,4 @@
-# Weyerhaeuser Forestry Knowledge Assistant
+# Weyerhaeuser Forestry Knowledge Assistant Demo
 
 ## Quick Start
 1. Launch the application: [here](https://holcombforestryragusecase.streamlit.app/) (or paste this link: https://holcombforestryragusecase.streamlit.app/)

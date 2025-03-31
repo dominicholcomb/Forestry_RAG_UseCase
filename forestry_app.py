@@ -41,7 +41,7 @@ def query_claude(prompt, model="claude-3-7-sonnet-20250219", max_tokens=400):
             max_tokens=max_tokens,
             temperature=0.4,
             system="You are a helpful assistant trained on forestry best practices, planting guidelines, harvest planning, and fire prevention. "
-                   "Answer concisely and clearly. Cite context providing the exact name of the document in quotations whenever referenced. End each comment with a disclaimer to review relevant documentation when in doubt since AI responses are not 100% accurate when appropriate.",
+                   "Answer concisely and clearly. Cite context providing the exact name of the document in quotations whenever referenced. ",
             messages=[{"role": "user", "content": prompt}]
         )
         return response.content[0].text

@@ -5,7 +5,7 @@ from pinecone import Pinecone
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Load from .env or Streamlit secrets
+# Load the keys!
 ant_api = st.secrets["ANTHROPIC_API_KEY"] if "ANTHROPIC_API_KEY" in st.secrets else None
 pc_api = st.secrets["PINECONE_API_KEY"] if "PINECONE_API_KEY" in st.secrets else None
 oai_api = st.secrets["OPENAI_API_KEY"] if "OPENAI_API_KEY" in st.secrets else None
@@ -25,7 +25,7 @@ index = pc.Index(index_name)
 client_ant = anthropic.Anthropic(api_key=ant_api)
 client_open = OpenAI(api_key=oai_api)
 
-# --- Embedding ---
+# Create the vector embedding
 def get_embedding(text):
     response = client_open.embeddings.create(
         model="text-embedding-ada-002",
@@ -33,7 +33,7 @@ def get_embedding(text):
     )
     return response.data[0].embedding
 
-# --- Claude API call ---
+# Call our LLM, I chose Claude as I have an existing personal account!
 def query_claude(prompt, model="claude-3-7-sonnet-20250219", max_tokens=400):
     try:
         response = client_ant.messages.create(
@@ -49,7 +49,7 @@ def query_claude(prompt, model="claude-3-7-sonnet-20250219", max_tokens=400):
         print(f"Error calling Claude API: {e}")
         return "An error occurred when querying Claude."
 
-# --- Pinecone similarity search ---
+# Find the closest "chunks" to the question asked
 def search_pinecone(query, top_k=5):
     query_embedding = get_embedding(query)
     results = index.query(
@@ -59,7 +59,7 @@ def search_pinecone(query, top_k=5):
     )
     return results.get("matches", [])
 
-# --- Combine context + Claude ---
+# Put context together into prompt and pass to LLm
 def generate_response_from_pinecone(query):
     """Search Pinecone, format context, and query Claude."""
     retrieved_chunks = search_pinecone(query)
@@ -89,11 +89,11 @@ Answer:
     return query_claude(prompt)
 
 
-# --- Streamlit UI ---
+# Webpage UI
 st.set_page_config(page_title="Forestry Doc Assistant", page_icon="🌲")
 st.title("Forestry Document Chatbot Demo")
 st.write("Ask a question based on the forestry guidelines, fire prevention plans, and harvest planning documents found in the GitHub folder ([here](https://github.com/dominicholcomb/Forestry_RAG_UseCase/tree/main/sample_documents)).")
-# --- Sidebar disclaimer ---
+# Add a sidebar with a disclaimer and sample questions
 with st.sidebar:
     st.markdown("### ℹ️ Disclaimer")
     st.markdown(
@@ -102,6 +102,10 @@ with st.sidebar:
         for field operations and forestry management employees using **fabricated/test documentation**.  
         
         **Note:** The content of this demo is entirely fictional and does **not** represent official Weyerhaeuser policy.
+
+        ### Sample Questions:
+        * "What is the minimum required sampling intensity for a timber cruise during the pre-harvest assessment?"
+        * "What is the preferred height range for Douglas Fir seedlings?"
         """
     )
 

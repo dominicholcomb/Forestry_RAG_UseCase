@@ -47,7 +47,7 @@ def query_claude(prompt, model="claude-3-7-sonnet-20250219", max_tokens=400):
         return response.content[0].text
     except Exception as e:
         print(f"Error calling Claude API: {e}")
-        return "An error occurred when querying Claude."
+        return "The Claude API is currently overloaded. In future iterations of this platform we can set a fallback model to mitigate issues like this. For now, please try again later."
 
 # Find the closest "chunks" to the question asked
 def search_pinecone(query, top_k=5):

@@ -74,4 +74,4 @@ This would likely be easier in a low-code environment... I just can't develop in
 - **Security Implementation**: Consider adding authentication, role-based access control, and other safety measures to meet enterprise security requirements
 - **Responsible AI Framework**: Implement AI ethics guidelines, user feedback mechanisms, and clear disclaimers about potential limitations
 - **Performance Monitoring**: Add analytics/features to track usage, response preferences (thumbs up/thumbs down button), and identify opportunities for system improvement
-- **Mobile Adaptations**: Optimize the interface for field use on mobile devices with limited connectivity
+- **Mobile Adaptations**: Optimize the interface for field use on mobile devices with limited connectivity (saving old conversations, providing relevant documents in response to question, when internet is not accessible...)

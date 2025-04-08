@@ -10,7 +10,7 @@
    - "What is the preferred height range for Douglas Fir seedlings?"
 
 ## Overview
-This demo showcases a Retrieval-Augmented Generation (RAG) system designed for Weyerhaeuser's field operations and forestry management teams. The application allows employees to query forestry-related information using natural language, receiving accurate answers derived from company documentation.
+This demo showcases a Retrieval-Augmented Generation (RAG) system designed for Weyerhaeuser's field operations and forestry management teams. The application allows employees to ask forestry-related natural language questions to receive accurate answers derived from company documentation.
 
 ## Problem Statement
 Field workers (i.e. field operations and forestry management employees) often need access to specific information from company protocols and guidelines while working in remote locations. Traditional document searching can be time-consuming and inefficient, and may lead to an inability to find critical information, contributing to less safe and compliant field work.
@@ -19,7 +19,7 @@ Field workers (i.e. field operations and forestry management employees) often ne
 This knowledge assistant uses RAG technology to:
 1. Index company documents into a vector database (forestry_ingest.py)
 2. Retrieve relevant information based on prompt (forestry_app.py)
-3. Generate response using retrieved context (forestry_app.py)
+3. Generate responses using retrieved context (forestry_app.py)
 4. Provide citations to ensure transparency and trust (forestry_app.py)
 
 ## Demo Application
@@ -69,7 +69,7 @@ This same functionality could be implemented in a low-code environment using:
 This would likely be easier in a low-code environment... I just can't develop in Power Apps on my personal account!
 
 ## Future Enhancements
-- **Expanded Testing**: Develop more comprehensive test examples with edge cases to ensure reliability across diverse forestry queries
+- **Expanded Testing**: Develop more comprehensive test examples with edge cases to ensure reliability across diverse question types
 - **Model Optimization**: Evaluate different LLM models and parameters to balance performance, cost, and latency for production deployment
 - **Security Implementation**: Consider adding authentication, role-based access control, and other safety measures to meet enterprise security requirements
 - **Responsible AI Framework**: Implement AI ethics guidelines, user feedback mechanisms, and clear disclaimers about potential limitations

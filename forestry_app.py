@@ -34,7 +34,7 @@ def get_embedding(text):
     return response.data[0].embedding
 
 # Call our LLM, I chose Claude as I have an existing personal account!
-def query_claude(prompt, model="claude-3-7-sonnet-20250219", max_tokens=400):
+def query_claude(prompt, model="claude-sonnet-4-20250514", max_tokens=400):
     try:
         response = client_ant.messages.create(
             model=model,
